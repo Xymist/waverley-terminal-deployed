@@ -1,0 +1,23 @@
+<div id="buttonmix">
+    <div class="ng-class: buttonwidth;" ng-repeat="button in buttons" style="padding-right: 5px; padding-left: 5px;">
+        <div ng-switch="button.telephone">
+            <div ng-switch-when="noTelephone">
+                <a class="col-xs-12 btn btn-yellow org-button" href="{{button.web_address}}" style="height: 205px">
+                    <div>
+                        <h1 style="margin-top: 50px"><strong>{{button.organisation}}</strong></h1>
+                        <h3><strong>{{button.details}}</strong></h3>
+                    </div>
+                </a>
+            </div>
+            <div ng-switch-default>
+                <a class="col-xs-12 btn btn-yellow org-button" href="{{button.web_address}}" style="height: 149px">
+                    <div>
+                        <h1><strong>{{button.organisation}}</strong></h1>
+                        <h3><strong>{{button.details}}</strong></h3>
+                    </div>
+                </a>
+                <a class="col-xs-12 btn btn-yellow org-button" href="tel:{{button.telephone}}" style="height: 41px; font-size: 22px"><i class="glyphicon glyphicon-phone-alt"></i> {{button.telephone}}</a>
+            </div>
+        </div>
+    </div>
+</div>

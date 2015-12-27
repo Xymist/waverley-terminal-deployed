@@ -1,0 +1,5 @@
+Guildford Terminal
+
+- Guildford logo block
+- Guildford Orgs in Local Organisations
+- No phone numbers (long term decision)
